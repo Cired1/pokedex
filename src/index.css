@@ -1,0 +1,185 @@
+:root {
+  --bug-color: rgb(158, 173, 25);
+  --dark-color: rgb(79, 58, 45);
+  --dragon-color: rgb(114, 91, 218);
+  --electric-color: rgb(250, 183, 22);
+  --fairy-color: rgb(243, 175, 243);
+  --fighting-color: rgb(127, 51, 28);
+  --fire-color: rgb(232, 60, 12);
+  --flying-color: rgb(141, 159, 238);
+  --ghost-color: rgb(92, 92, 173);
+  --grass-color: rgb(110, 191, 49);
+  --ground-color: rgb(206, 173, 83);
+  --ice-color: rgb(168, 233, 254);
+  --normal-color: rgb(195, 190, 180);
+  --poison-color: rgb(145, 68, 147);
+  --psychic-color: rgb(237, 72, 130);
+  --rock-color: rgb(184, 161, 86);
+  --steel-color: rgb(179, 179, 194);
+  --water-color: rgb(47, 145, 242);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* ----- BUG ----- */
+
+.bug {
+  background-color: var(--bug-color);
+}
+
+.bug-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--bug-color),
+    var(--flying-color)
+  );
+}
+
+.bug-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--bug-color),
+    var(--flying-color)
+  );
+}
+
+.bug-poison {
+  background-image: linear-gradient(
+    to right,
+    var(--bug-color),
+    var(--poison-color)
+  );
+}
+
+/* ----- DARK ----- */
+
+.dark {
+  background-color: var(--dark-color);
+}
+
+/* ----- DRAGON ----- */
+
+.dragon {
+  background-color: var(--dragon-color);
+}
+
+/* ----- ELECTRIC ----- */
+
+.electric {
+  background-color: var(--electric-color);
+}
+
+/* ----- FAIRY ----- */
+
+.fairy {
+  background-color: var(--fairy-color);
+}
+
+/* ----- FIGHTING ----- */
+
+.fighting {
+  background-color: var(--fighting-color);
+}
+
+/* ----- FIRE ----- */
+
+.fire {
+  background-color: var(--fire-color);
+}
+
+.fire-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--fire-color),
+    var(--flying-color)
+  );
+}
+
+/* ----- FLYING ----- */
+
+.flying {
+  background-color: var(--flying-color);
+}
+
+/* ----- GHOST ----- */
+
+.ghost {
+  background-color: var(--ghost-color);
+}
+
+/* ----- GRASS ----- */
+
+.grass {
+  background-color: var(--grass-color);
+}
+
+.grass-poison {
+  background-image: linear-gradient(
+    to right,
+    var(--grass-color),
+    var(--poison-color)
+  );
+}
+
+/* ----- GROUND ----- */
+
+.ground {
+  background-color: var(--ground-color);
+}
+
+/* ----- ICE ----- */
+
+.ice {
+  background-color: var(--ice-color);
+}
+
+/* ----- NORMAL ----- */
+
+.normal {
+  background-color: var(--normal-color);
+}
+
+.normal-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--normal-color),
+    var(--flying-color)
+  );
+}
+
+/* ----- POISON ----- */
+
+.poison {
+  background-color: var(--poison-color);
+}
+
+/* ----- PSYCHIC ----- */
+
+.psychic {
+  background-color: var(--psychic-color);
+}
+
+/* ----- ROCK ----- */
+
+.rock {
+  background-color: var(--rock-color);
+}
+
+/* ----- STEEL ----- */
+
+.steel {
+  background-color: var(--steel-color);
+}
+
+/* ----- WATER ----- */
+
+.water {
+  background-color: var(--water-color);
+}
