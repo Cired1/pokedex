@@ -2,16 +2,18 @@ import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import pokemonService from "../services/pokemon/pokemonService";
 
-function usePokemons() {
+function usePokemons(offset) {
 
     const [pokemons, setPokemons] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     const {
         data: pokemonURL,
         status: pokemonURLStatus
-    } = useQuery(["pokemonList"], pokemonService.getPokemonUrl);
+    } = useQuery(["pokemonList", offset], () => pokemonService.getPokemonUrl(offset));
 
     useEffect(() => {
+        setLoading(true);
         if (pokemonURLStatus === "success") {
             const { results } = pokemonURL;
             Promise.all([
@@ -35,11 +37,14 @@ function usePokemons() {
                 pokemonService.getPokemon(results[17].name),
                 pokemonService.getPokemon(results[18].name),
                 pokemonService.getPokemon(results[19].name),
-            ]).then(data => setPokemons(data))
+            ]).then(data => {
+                setPokemons(data);
+                setLoading(false);
+            })
         }
     }, [pokemonURLStatus, pokemonURL])
 
-    return { pokemons, pokemonURLStatus }
+    return { pokemons, pokemonURLStatus, loading }
 
 }
 

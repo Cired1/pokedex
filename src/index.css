@@ -34,6 +34,30 @@ a:hover {
   background-color: var(--bug-color);
 }
 
+.bug-dark {
+  background-image: linear-gradient(
+    to right,
+    var(--bug-color),
+    var(--dark-color)
+  );
+}
+
+.bug-dragon {
+  background-image: linear-gradient(
+    to right,
+    var(--bug-color),
+    var(--dragon-color)
+  );
+}
+
+.bug-electric {
+  background-image: linear-gradient(
+    to right,
+    var(--bug-color),
+    var(--electric-color)
+  );
+}
+
 .bug-flying {
   background-image: linear-gradient(
     to right,
@@ -47,6 +71,14 @@ a:hover {
     to right,
     var(--bug-color),
     var(--flying-color)
+  );
+}
+
+.bug-grass {
+  background-image: linear-gradient(
+    to right,
+    var(--bug-color),
+    var(--grass-color)
   );
 }
 
@@ -64,10 +96,26 @@ a:hover {
   background-color: var(--dark-color);
 }
 
+.dark-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--dark-color),
+    var(--flying-color)
+  );
+}
+
 /* ----- DRAGON ----- */
 
 .dragon {
   background-color: var(--dragon-color);
+}
+
+.dragon-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--dragon-color),
+    var(--flying-color)
+  );
 }
 
 /* ----- ELECTRIC ----- */
@@ -76,10 +124,34 @@ a:hover {
   background-color: var(--electric-color);
 }
 
+.electric-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--electric-color),
+    var(--flying-color)
+  );
+}
+
+.electric-steel {
+  background-image: linear-gradient(
+    to right,
+    var(--electric-color),
+    var(--steel-color)
+  );
+}
+
 /* ----- FAIRY ----- */
 
 .fairy {
   background-color: var(--fairy-color);
+}
+
+.fairy-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--fairy-color),
+    var(--flying-color)
+  );
 }
 
 /* ----- FIGHTING ----- */
@@ -108,16 +180,48 @@ a:hover {
   background-color: var(--flying-color);
 }
 
+.flying-fairy {
+  background-image: linear-gradient(
+    to right,
+    var(--flying-color),
+    var(--fairy-color)
+  );
+}
+
+.flying-normal {
+  background-image: linear-gradient(
+    to right,
+    var(--flying-color),
+    var(--normal-color)
+  );
+}
+
 /* ----- GHOST ----- */
 
 .ghost {
   background-color: var(--ghost-color);
 }
 
+.ghost-poison {
+  background-image: linear-gradient(
+    to right,
+    var(--ghost-color),
+    var(--poison-color)
+  );
+}
+
 /* ----- GRASS ----- */
 
 .grass {
   background-color: var(--grass-color);
+}
+
+.grass-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--grass-color),
+    var(--flying-color)
+  );
 }
 
 .grass-poison {
@@ -128,10 +232,34 @@ a:hover {
   );
 }
 
+.grass-psychic {
+  background-image: linear-gradient(
+    to right,
+    var(--grass-color),
+    var(--psychic-color)
+  );
+}
+
 /* ----- GROUND ----- */
 
 .ground {
   background-color: var(--ground-color);
+}
+
+.ground-poison {
+  background-image: linear-gradient(
+    to right,
+    var(--ground-color),
+    var(--poison-color)
+  );
+}
+
+.ground-rock {
+  background-image: linear-gradient(
+    to right,
+    var(--ground-color),
+    var(--rock-color)
+  );
 }
 
 /* ----- ICE ----- */
@@ -140,10 +268,34 @@ a:hover {
   background-color: var(--ice-color);
 }
 
+.ice-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--ice-color),
+    var(--flying-color)
+  );
+}
+
+.ice-psychic {
+  background-image: linear-gradient(
+    to right,
+    var(--ice-color),
+    var(--psychic-color)
+  );
+}
+
 /* ----- NORMAL ----- */
 
 .normal {
   background-color: var(--normal-color);
+}
+
+.normal-fairy {
+  background-image: linear-gradient(
+    to right,
+    var(--normal-color),
+    var(--fairy-color)
+  );
 }
 
 .normal-flying {
@@ -154,10 +306,34 @@ a:hover {
   );
 }
 
+.normal-psychic {
+  background-image: linear-gradient(
+    to right,
+    var(--normal-color),
+    var(--psychic-color)
+  );
+}
+
 /* ----- POISON ----- */
 
 .poison {
   background-color: var(--poison-color);
+}
+
+.poison-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--poison-color),
+    var(--flying-color)
+  );
+}
+
+.poison-ground {
+  background-image: linear-gradient(
+    to right,
+    var(--poison-color),
+    var(--ground-color)
+  );
 }
 
 /* ----- PSYCHIC ----- */
@@ -166,10 +342,66 @@ a:hover {
   background-color: var(--psychic-color);
 }
 
+.psychic-fairy {
+  background-image: linear-gradient(
+    to right,
+    var(--psychic-color),
+    var(--fairy-color)
+  );
+}
+
+.psychic-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--psychic-color),
+    var(--flying-color)
+  );
+}
+
+.psychic-ice {
+  background-image: linear-gradient(
+    to right,
+    var(--psychic-color),
+    var(--ice-color)
+  );
+}
+
+.psychic-normal {
+  background-image: linear-gradient(
+    to right,
+    var(--psychic-color),
+    var(--normal-color)
+  );
+}
+
 /* ----- ROCK ----- */
 
 .rock {
   background-color: var(--rock-color);
+}
+
+.rock-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--rock-color),
+    var(--flying-color)
+  );
+}
+
+.rock-ground {
+  background-image: linear-gradient(
+    to right,
+    var(--rock-color),
+    var(--ground-color)
+  );
+}
+
+.rock-water {
+  background-image: linear-gradient(
+    to right,
+    var(--rock-color),
+    var(--water-color)
+  );
 }
 
 /* ----- STEEL ----- */
@@ -182,4 +414,76 @@ a:hover {
 
 .water {
   background-color: var(--water-color);
+}
+
+.water-electric {
+  background-image: linear-gradient(
+    to right,
+    var(--water-color),
+    var(--electric-color)
+  );
+}
+
+.water-fairy {
+  background-image: linear-gradient(
+    to right,
+    var(--water-color),
+    var(--fairy-color)
+  );
+}
+
+.water-fighting {
+  background-image: linear-gradient(
+    to right,
+    var(--water-color),
+    var(--fighting-color)
+  );
+}
+
+.water-flying {
+  background-image: linear-gradient(
+    to right,
+    var(--water-color),
+    var(--flying-color)
+  );
+}
+
+.water-ground {
+  background-image: linear-gradient(
+    to right,
+    var(--water-color),
+    var(--ground-color)
+  );
+}
+
+.water-ice {
+  background-image: linear-gradient(
+    to right,
+    var(--water-color),
+    var(--ice-color)
+  );
+}
+
+.water-poison {
+  background-image: linear-gradient(
+    to right,
+    var(--water-color),
+    var(--poison-color)
+  );
+}
+
+.water-psychic {
+  background-image: linear-gradient(
+    to right,
+    var(--water-color),
+    var(--psychic-color)
+  );
+}
+
+.water-rock {
+  background-image: linear-gradient(
+    to right,
+    var(--water-color),
+    var(--rock-color)
+  );
 }
