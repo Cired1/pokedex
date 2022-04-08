@@ -4,6 +4,7 @@ import List from "../../components/List/List";
 import Pagination from "../../components/Pagination/Pagination";
 import OffsetContext from "../../context/offset";
 import { useContext } from "react";
+import ListPlaceholder from "../../components/ListPlaceholder/ListPlaceholder";
 
 const Home = () => {
 
@@ -14,7 +15,7 @@ const Home = () => {
     return (
         <Container>
             {pokemonURLStatus === "loading" || loading === true
-                ? <>Loading...</>
+                ? <ListPlaceholder />
                 : <>
                     <List
                         pokemons={pokemons}

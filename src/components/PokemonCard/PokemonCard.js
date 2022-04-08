@@ -6,7 +6,6 @@ const PokemonCard = ({ name, image, id, primaryType, secondaryType }) => {
     return (
         <Card style={{ maxWidth: "20%", minWidth: "200px" }}>
             <Card.Header as="h5" 
-                /* className={`${primaryType} ${secondaryType}`} */
                 className={secondaryType 
                     ? `${primaryType}-${secondaryType}`
                     : `${primaryType}`
