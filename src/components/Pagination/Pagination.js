@@ -16,16 +16,16 @@ const Pagination = () => {
         <Container style={{ display: "flex", justifyContent: "center", gap: "1rem" }}>
             <Button
                 variant="primary"
-                style={{ minWidth: "100px" }}
+                style={{ minWidth: "70px" }}
                 size="sm"
                 onClick={previous}
                 disabled={offset === 0 ? true : false}
             >
-                Previous
+                {"<<<"}
             </Button>
             <Button
                 variant="primary"
-                style={{ minWidth: "100px" }}
+                style={{ minWidth: "70px" }}
                 size="sm"
                 onClick={first}
                 disabled={offset === 0 ? true : false}
@@ -34,11 +34,11 @@ const Pagination = () => {
             </Button>
             <Button
                 variant="primary"
-                style={{ minWidth: "100px" }}
+                style={{ minWidth: "70px" }}
                 size="sm"
                 onClick={next}
             >
-                Next
+                {">>>"}
             </Button>
         </Container>
     )
