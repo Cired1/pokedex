@@ -13,7 +13,7 @@ const Home = () => {
     const { pokemons, pokemonURLStatus, loading } = usePokemons(offset);
 
     return (
-        <Container>
+        <Container style={{ minHeight: "calc(100vh - 56px)" }}>
             {pokemonURLStatus === "loading" || loading === true
                 ? <ListPlaceholder />
                 : <>

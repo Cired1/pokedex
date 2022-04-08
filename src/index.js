@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from "react-router-dom";
 import { QueryClientProvider, QueryClient } from "react-query";
 import { OffsetProvider } from './context/offset';
+import { ThemeProvider } from './context/theme';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
@@ -15,9 +16,11 @@ root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <Router>
-        <OffsetProvider>
-          <App />
-        </OffsetProvider>
+        <ThemeProvider>
+          <OffsetProvider>
+            <App />
+          </OffsetProvider>
+        </ThemeProvider>
       </Router>
     </QueryClientProvider>
   </React.StrictMode>

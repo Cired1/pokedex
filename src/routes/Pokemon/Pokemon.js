@@ -6,7 +6,7 @@ const Pokemon = () => {
     const { pokemon, pokemonStatus } = usePokemon();
 
     return (
-        <Container>
+        <Container style={{minHeight: "calc(100vh - 56px)"}}>
             {pokemonStatus === "loading"
                 ? <h2>loading...</h2>
                 : pokemon.name

@@ -1,14 +1,18 @@
-
+import { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
+import ThemeContext from "./context/theme";
 import Home from "./routes/Home/Home";
 import NotFound from "./routes/NotFound/NotFound";
 import Pokemon from "./routes/Pokemon/Pokemon";
 
 function App() {
+
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className="App">
+    <div className={`bg-${theme}`}>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />

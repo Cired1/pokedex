@@ -4,7 +4,7 @@ import PokemonCard from '../PokemonCard/PokemonCard';
 const List = ({ pokemons }) => {
 
     return (
-        <Container style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "1rem", padding: "1rem" }}>
+        <Container style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "1rem", padding: "1rem", marginTop: "1rem" }}>
             {pokemons.map((pokemon) => {
                 const { id, name, sprites, types } = pokemon;
                 return <PokemonCard
